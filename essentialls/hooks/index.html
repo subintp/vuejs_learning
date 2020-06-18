@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vue Appp</title>
+    <script src="https://unpkg.com/vue"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div>
+        Counter: {{count}}
+        <button v-on:click="inc">inc</button>
+      </div>
+    </div>
+    <script>
+      var app = new Vue({
+        el: "#app",
+        data: {
+          count: 0,
+        },
+        methods: {
+          inc() {
+            console.log("Clicked");
+            this.count++;
+          },
+        },
+        updated() {
+          console.log("updated");
+          console.log(this.count);
+        },
+      });
+    </script>
+  </body>
+</html>

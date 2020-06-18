@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>Vue Appp</title>
+     <script src="https://unpkg.com/vue">
+     </script>
+    </head>
+    <body>
+        <div id="app">
+           <ul v-for="colour in colours" v-if="colour == 'green'">
+               <li>{{colour}}</li>
+           </ul>
+        </div>
+        <script>
+            var app = new Vue({
+                el: "#app",
+                data: {
+                    colours: ['red', 'green', 'blue', 'yellow']
+                }
+            })
+        </script>
+    </body>
+</html>

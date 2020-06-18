@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vue Appp</title>
+    <script src="https://unpkg.com/vue"></script>
+  </head>
+  <body>
+    <div id="app">
+      <span>
+        Change the text
+        <input v-model="text" />
+        lower = {{lowerText()}}
+      </span>
+    </div>
+    <script>
+      var app = new Vue({
+        el: "#app",
+        data: {
+          text: "",
+        },
+        computed: {
+          lowerText() {
+            this.text.toLowerCase();
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
