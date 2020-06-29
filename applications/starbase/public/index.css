@@ -1,0 +1,9 @@
+body {
+  background-color: black;
+}
+
+#app {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: white;
+}
